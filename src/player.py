@@ -8,6 +8,7 @@ class Player:
         self.location = location
 
     def change_direction(self, direction):
+        # import ipdb; ipdb.set_trace()
         try:
             if direction == 'N':
                 self.location = self.location.n_to
