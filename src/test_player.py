@@ -10,8 +10,8 @@ class TestPlayer(unittest.TestCase):
         self.mock_room = {
             'outside':  Room("Outside Cave Entrance", "North of you, the cave\
                  mount beckons"),
-            'foyer':    Room("Foyer", """Dim light filters in from the south. \
-                Dusty passages run north and east."""),
+            'foyer':    Room("Foyer", "Dim light filters in from the south. \
+                Dusty passages run north and east."),
         }
         self.mock_player = Player('test', self.mock_room['outside'])
         self.mock_room['outside'].n_to = self.mock_room['foyer']
